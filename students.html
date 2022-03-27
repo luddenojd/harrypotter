@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="students.css" />
+    <title>Harry Potter || Students</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <ul id="navbar">
+          <li class="logo">
+            <a href="index.html"
+              ><img
+                id="hplogo"
+                src="0021843_harry-potter-logo_555.png"
+                alt="Harry Potter Logotyp"
+            /></a>
+          </li>
+          <li class="navitems">
+            <a href="students.html"
+              >HOGWARTS<br />
+              STUDENTS</a
+            >
+          </li>
+          <li class="navitems">
+            <a href="staff.html"
+              >HOGWARTS<br />
+              STAFF</a
+            >
+          </li>
+          <li id="canvas">
+            <canvas id="myChart" width="200" height="200"></canvas>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section id="one">
+          <h1 id="rolling">Student Archives</h1>
+          <input
+            type="text"
+            id="searchField"
+            placeholder="Search student..."
+          /><br />
+          <input type="submit" id="button" value="Send to local storage" />
+        </section>
+        <section id="two">
+          <img id="scroll" src="scroll.png" />
+
+          <ul id="list"></ul>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

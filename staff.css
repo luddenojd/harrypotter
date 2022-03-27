@@ -1,0 +1,187 @@
+body {
+  background-image: url(beskuren2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150vh;
+  margin: 0;
+}
+
+header {
+  color: whitesmoke;
+  padding: 3px;
+  position: fixed;
+  width: 25%;
+  height: 15%;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "one two"
+    "three four";
+}
+
+#one {
+  grid-area: one;
+  margin-left: 350px;
+  font-family: "Cinzel", serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 20px;
+}
+
+#two {
+  grid-area: two;
+  color: black;
+  margin-right: 200px;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navitems {
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+#list {
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  list-style-type: none;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 60px;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+#searchField {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: wheat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+#scroll {
+  position: absolute;
+  z-index: -1;
+}
+
+span {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+span.fade {
+  opacity: 1;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#canvas {
+  padding: 5px;
+  border-radius: 7px;
+}
+
+#button {
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+#profilePic {
+  width: 150px;
+  margin-bottom: 400px;
+  margin-left: 330px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    position: relative;
+  }
+
+  #scroll {
+    width: 270px;
+    margin-top: 40px;
+  }
+
+  #one {
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #two {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  #list {
+    font-size: 8px;
+    margin-left: 0;
+  }
+
+  #canvas {
+    display: none;
+  }
+
+  #profilePic {
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    width: 70px;
+  }
+}
