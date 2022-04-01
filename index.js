@@ -8,7 +8,7 @@ list.style.display = "none";
 searchScroll.style.display = "none";
 img.style.display = "none";
 
-fetch("http://hp-api.herokuapp.com/api/characters/students")
+fetch("https://hp-api.herokuapp.com/api/characters/students")
   .then((response) => response.json())
   .then((result) => {
     students = result;
